@@ -1,0 +1,131 @@
+.partners {
+  padding-bottom: 73px;
+}
+
+.partners__title {
+  @include font(28, 44);
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #121920;
+}
+
+.partners__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+}
+
+.partners__item {
+  width: 100%;
+  min-height: 140px;
+  margin-bottom: 20px;
+  border: 1px solid #ebebf1;
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--1 {
+    background-image: url("../img/logo-mobile/henkel-mobile.png");
+
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/logo-mobile/henkel-mobile@2x.png");
+      background-size: cover;
+    }
+  }
+
+  &--2 {
+    background-image: url("../img/logo-mobile/john-mobile.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/logo-mobile/john-mobile@2x.png");
+      background-size: cover;
+    }
+  }
+
+  &--3 {
+    background-image: url("../img/logo-mobile/mc-mobile.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/logo-mobile/mc-mobile@2x.png");
+      background-size: cover;
+    }
+  }
+
+  &--4 {
+    background-image: url("../img/logo-mobile/ikea-mobile.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/logo-mobile/ikea-mobile@2x.png");
+      background-size: cover;
+    }
+  }
+
+  &--5 {
+    background-image: url("../img/logo-mobile/reebok-mobile.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/logo-mobile/reebok-mobile@2x.png");
+      background-size: cover;
+    }
+  }
+
+  &--6 {
+    background-image: url("../img/logo-mobile/nike-mobile.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/logo-mobile/nike-mobile@2x.png");
+      background-size: cover;
+    }
+  }
+
+  &--7 {
+    background-image: url("../img/logo-mobile/cat-mobile.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/logo-mobile/cat-mobile@2x.png");
+      background-size: cover;
+    }
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .partners__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .partners__item {
+    width: 31.5%;
+    min-height: 120px;
+    margin-right: 20px;
+    margin-bottom: 22px;
+    background-size: contain;
+
+    @media (max-width: $desktop-min-width) {
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .partners__title {
+    @include font(36, 58);
+  }
+
+  .partners__item {
+    width: 23.07%;
+    min-height: 100px;
+    margin-right: 2.57%;
+    margin-bottom: 30px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
